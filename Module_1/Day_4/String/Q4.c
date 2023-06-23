@@ -40,7 +40,6 @@ int main() {
     printf("Enter the rotation direction (L/R): ");
     scanf(" %c", &direction);
     
-    // Remove the newline character from the input string
     str[strcspn(str, "\n")] = '\0';
     
     printf("Original String: %s\n", str);

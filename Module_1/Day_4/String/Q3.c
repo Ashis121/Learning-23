@@ -14,7 +14,6 @@ int main() {
     printf("Enter a time string (hh:mm:ss): ");
     fgets(timeString, sizeof(timeString), stdin);
     
-    // Remove the newline character from the input string
     timeString[strcspn(timeString, "\n")] = '\0';
     
     int totalSeconds = computeTotalSeconds(timeString);
